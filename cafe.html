@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cafe</title>
+  <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Smart Cafe</h1>
+    <p class="tagline">Fresh coffee delivered to your door.</p>
+    <a href="#order" class="cta">Order Now</a>
+  </header>
+
+  <main>
+    <h2>Why choose us?</h2>
+    <ul>
+      <li>Fast delivery (under 30 mins)</li>
+      <li>Organic beans only</li>
+      <li>Loyalty rewards for customers</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p> 2025 Smart Cafe. All rights reserved.</p>
+  </footer>
+
+<!-- Top Right Navigation Bar -->
+<div style="
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 1000;
+">
+  <a href="#home" style="
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  ">Home</a>
+
+  <a href="#about" style="
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  ">About Us</a>
+
+  <a href="#contact" style="
+    background-color: #c76b3b;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  ">Contact Us</a>
+</div>
+
+<!-- Home Section -->
+<section id="home" style="margin-top: 120px; text-align: center;">
+  <h1>Welcome to Smart Coffee</h1>
+  <p>Fresh coffee delivered to your door.</p>
+</section>
+
+<!-- About Us Section -->
+<section id="about" style="margin-top: 80px; text-align: center;">
+  <h2>About Us</h2>
+  <p>We are passionate about delivering fresh, organic coffee to our customers as quickly as possible. Our goal is to give you the best coffee experience every time.</p>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" style="margin-top: 80px; text-align: center;">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you!</p>
+  
+  <form action="mailto:youremail@example.com" method="post" enctype="text/plain" style="
+    display: inline-block;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  ">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+    <button type="submit" style="
+      background-color: #c76b3b;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    ">
+      Send
+    </button>
+  </form>
+</section>
+</body>
+</html>

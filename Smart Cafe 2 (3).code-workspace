@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cafe</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="elegant-bg">
+   <div id="special-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:1000;justify-content:center;align-items:center;">
+    <div style="background:#fff;padding:32px 24px;border-radius:16px;max-width:350px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.18);position:relative;">
+      <h2>Today's Special</h2>
+      <img src="images/pastries.webp" alt="Today's Special" style="width:120px;height:120px;object-fit:cover;border-radius:12px;margin-bottom:12px;">
+      <p id="special-desc">A unique pastry crafted by our chef. Ask for details or enjoy the surprise!</p>
+      <div id="special-choice">
+        <button onclick="showSurpriseOption()" style="background:#D4AF37;color:#fff;padding:8px 18px;border:none;border-radius:6px;cursor:pointer;margin-top:10px;margin-right:10px;">Surprise</button>
+        <button onclick="showRevealOption()" style="background:#4B2E2E;color:#fff;padding:8px 18px;border:none;border-radius:6px;cursor:pointer;margin-top:10px;">Reveal</button>
+      </div>
+      <button id="special-add-btn" onclick="addSpecialToCart()" style="background:#D4AF37;color:#fff;padding:8px 18px;border:none;border-radius:6px;cursor:pointer;margin-top:10px;display:none;">Add to Cart</button>
+      <button onclick="closeSpecialModal()" style="background:#e74c3c;color:#fff;padding:6px 14px;border:none;border-radius:6px;cursor:pointer;margin-top:10px;">Close</button>
+    </div>
+  </div>
+<header class="elegant-header">
+  <h1 class="elegant-title">Welcome to <span class="caramel-text">Smart Cafe</span></h1>
+  <p class="sage-text" style="font-family:'Inter',sans-serif;font-size:1.15em;margin-bottom:0.5em;">Fresh coffee delivered to your door.</p>
+  <nav class="elegant-nav">
+    <a href="index.html" class="elegant-nav-btn active">Home</a>
+    <a href="about.html" class="elegant-nav-btn">About Us</a>
+    <a href="reviews.html" class="elegant-nav-btn">Reviews</a>
+    <a href="contact.html" class="elegant-nav-btn">Contact</a>
+    <a href="#cart" class="elegant-nav-btn">Cart</a>
+  </nav>
+</header>
